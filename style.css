@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    height: 100vh;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #0E0E0E;
+    font-family: 'Montserrat'sans-serif;
+    font-style: normal;
+    font-display: swap;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(13, 4, 49, 0.1),
+        rgba(38, 7, 49, 0.1)
+      ),
+      url(./assets/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 1px;
+    background-size: cover;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    color: #F1F1F1;
+    height: 10vh;
+  }
+
+  .navbar img{
+    margin: 15px 70px;
+    height: 40px;
+  }
+
+  .line{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 10px;
+    padding: 25px;
+    border-right: 1px solid #F1F1F1;
+  }
+
+  .grow-list {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 65%;
+    height: 7vh;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 12px;
+  }
+
+  .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 80px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+  }
+
+  .material-icons {
+    margin-left: -70px;
+    margin-right: 80px;
+  }
+
+  .button-small {
+    margin-top: 14px;
+    width: 145px;
+    height: 40px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .hero {
+    padding: 13% 25%;
+    text-align: center;
+    height: 80vh;
+  }
+  
+  .hero-heading {
+    font-size: 80px;
+    font-weight: 700;
+    color: #F1F1F1;
+  }
+  
+  .hero-description {
+    font-size: 22px;
+    padding: 10px 0;
+    color: #F1F1F1;
+  }
+
+  .button-large{
+    margin-top: 14px;
+    width: 350px;
+    height: 60px;
+    background-color: #BA0CC5;
+    border: 1px solid #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{            
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(13, 4, 49, 0.1),
+        rgba(38, 7, 49, 0.1)
+      ),
+      url(./assets/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 1px;
+    background-size: cover;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    color: #F1F1F1;
+    height: 7vh;
+  }
+
+  .navbar img{
+    margin: 15px 30px;
+    height: 20px;
+  }
+
+  .line{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 5px;
+    padding: 20px;
+    border-right: 1px solid #F1F1F1;
+  }
+
+  .grow-list {
+    width:40px; /*width of your image*/
+    height:40px; /*height of your image*/
+    content:url(./assets/hamburgermenu.png);
+    margin:5px 110px; /* If you want no margin */
+    padding:0; /*if your want to padding */
+  }
+
+  .list {
+    display: none;
+  }
+
+  .material-icons {
+    margin-left: 1px;
+    margin-right: 10px;
+  }
+
+  .button-small {
+    position: absolute;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 90px;
+    height: 30px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .hero {
+    padding: 15% 3%;
+    text-align: center;
+    height: 80vh;
+  }
+  
+  .hero-heading {
+    font-size: 70px;
+    font-weight: 700;
+    color: #F1F1F1;
+  }
+  
+  .hero-description {
+    font-size: 22px;
+    padding: 10px 0;
+    color: #F1F1F1;
+  }
+
+  .button-large{
+    margin-top: 14px;
+    width: 200px;
+    height: 60px;
+    background-color: #BA0CC5;
+    border: 1px solid #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{            
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(13, 4, 49, 0.1),
+        rgba(38, 7, 49, 0.1)
+      ),
+      url(./assets/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 1px;
+    background-size: cover;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    color: #F1F1F1;
+    height: 7vh;
+  }
+
+  .navbar img{
+    margin: 15px 30px;
+    height: 20px;
+  }
+
+  .line{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 5px;
+    padding: 20px;
+    border-right: 1px solid #F1F1F1;
+  }
+
+  .grow-list {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 65%;
+    height: 7vh;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 12px;
+  }
+
+  .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 17px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+  }
+
+  .material-icons { 
+    position: relative;   
+    margin-left: -17px;
+    margin-right: 10px;
+  }
+
+  .button-small {
+    position: relative;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 90px;
+    height: 30px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .hero {
+    padding: 17% 8%;
+    text-align: center;
+    height: 80vh;
+  }
+  
+  .hero-heading {
+    font-size: 70px;
+    font-weight: 700;
+    color: #F1F1F1;
+  }
+  
+  .hero-description {
+    font-size: 22px;
+    padding: 20px 0;
+    color: #F1F1F1;
+  }
+
+  .button-large{
+    margin-top: 14px;
+    width: 240px;
+    height: 60px;
+    background-color: #BA0CC5;
+    border: 1px solid #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grow-list {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    height: 7vh;
+  }
+
+  .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+  }
+
+  .material-icons { 
+    position: relative;   
+    margin-left: -27px;
+    margin-right: 20px;
+  }
+
+  .button-small {
+    position: relative;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-weight: 700;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grow-list {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    height: 7vh;
+  }
+
+  .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+  }
+
+  .material-icons { 
+    position: relative;   
+    margin-left: -27px;
+    margin-right: 20px;
+  }
+
+  .button-small {
+    position: relative;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-weight: 700;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grow-list {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    height: 7vh;
+  }
+
+  .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+  }
+
+  .material-icons { 
+    position: relative;   
+    margin-left: -27px;
+    margin-right: 20px;
+  }
+
+  .button-small {
+    position: relative;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-weight: 700;
+  } 
+}
+
+/* Extra large devices (large laptops and desktops, 1450px and up) */
+@media only screen and (min-width: 1450px) {
+  .grow-list {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80%;
+    height: 7vh;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 12px;
+  }
+
+  .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 80px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+  }
+
+  .material-icons {
+    margin-left: -70px;
+    margin-right: 80px;
+  }
+
+  .button-small {
+    margin-top: 6px;
+    width: 150px;
+    height: 35px;
+    background-color: #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .hero {
+    padding: 13% 25%;
+    text-align: center;
+    height: 80vh;
+  }
+  
+  .hero-heading {
+    font-size: 80px;
+    font-weight: 700;
+    color: #F1F1F1;
+  }
+  
+  .hero-description {
+    font-size: 22px;
+    padding: 10px 0;
+    color: #F1F1F1;
+  }
+
+  .button-large{
+    margin-top: 14px;
+    width: 350px;
+    height: 60px;
+    background-color: #BA0CC5;
+    border: 1px solid #BA0CC5;
+    border-radius: 10px;
+    color: #F1F1F1;
+    font-size: 25px;
+    font-weight: 600;
+  }  
+}
